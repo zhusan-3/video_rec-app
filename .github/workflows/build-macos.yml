@@ -29,7 +29,7 @@ jobs:
 
     - name: Build macOS executable
       run: |
-        pyinstaller --onefile --windowed --add-data "resources:resources" animation.py
+        pyinstaller --onefile --windowed animation.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
